@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/text_db
+lib/text_db.rb
+test/test_text_db.rb

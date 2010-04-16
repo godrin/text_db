@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+abort "you need to write me"
+
+
+# Maybe place a server here
