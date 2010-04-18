@@ -10,24 +10,49 @@ be based on the interface of ActiveRecord.
 
 == FEATURES/PROBLEMS:
 
+not much here yet
+
+* indexes missing
+* views missing
+* transactions missing
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+class Mail
+  include TextDB::Base
+  
+  dbattr :mail => String
+  dbattr :verified => [TrueClass,FalseClass]
+end
+
+mail=Mail.new
+mail.mail="mailName" # => "mailName"
+mail.mail=1234 # => exception
+mail.verified=true
+id=mail.save
+
+recoveredMail=Mail.get_by_id(id)
+recoveredMail==mail # => true
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+none so far
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+> git clone git@github.com:godrin/text_db.git
+> cd text_db
+> rake gem
+> gem install pkg/text_db-*.gem
+
+Later (No project on Gemcutter yet): 
+gem install text_db
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2010 FIX
+Copyright (c) 2010 David Kamphausen
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
