@@ -1,3 +1,4 @@
+.autotest
 History.txt
 Manifest.txt
 README.txt
@@ -5,9 +6,9 @@ Rakefile
 bin/text_db
 lib/text_db.rb
 lib/text_db/assert.rb
-lib/text_db/file_db.rb
+lib/text_db/db_core.rb
+lib/text_db/db_file.rb
 lib/text_db/simple_marshal.rb
-lib/text_db/text_db.rb
 lib/text_db/yaml_marshal.rb
 model/mail.rb
 model/project.rb
@@ -19,6 +20,8 @@ model/project_analysis/todo.rb
 model/user.rb
 pm.rb
 readme.txtbak
+test/models/mail.rb
+test/models/user.rb
 test/test_db.txt
 test/test_file_db.rb
 test/test_project.rb

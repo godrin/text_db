@@ -1,14 +1,15 @@
 = text_db
 
-* FIX (url)
+http://github.com/godrin/text_db
 
 == DESCRIPTION:
 
-FIX (describe your package)
+text_db is a simple file- and text-based database.
+It's completely written in Ruby. It's interface is / or should
+be based on the interface of ActiveRecord. 
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
 
 == SYNOPSIS:
 

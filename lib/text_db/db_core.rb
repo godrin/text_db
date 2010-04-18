@@ -1,7 +1,5 @@
-require 'assert'
-require 'file_db.rb'
-
-require 'yaml_marshal.rb'
+require File.dirname(__FILE__)+'/db_file.rb'
+require File.dirname(__FILE__)+'/yaml_marshal.rb'
 
 module TextDB
 
